@@ -145,6 +145,7 @@
   },
   "scripts": {
     "build": "gulp --gulpfile gulpfile.cjs && npm run update-authors",
+    "prepare": "npm run build",
     "build-and-test": "npm run build && npm run test:all && npm run lint",
     "build:clean": "gulp --gulpfile gulpfile.cjs clean",
     "build:docs": "gulp --gulpfile gulpfile.cjs docs",
